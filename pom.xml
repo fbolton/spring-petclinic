@@ -271,7 +271,7 @@
         <configuration>
           <forkCount>3</forkCount>
           <reuseForks>true</reuseForks>
-          <reportsDirectory>target/surefire-reports-${surefire.forkNumber}</reportsDirectory>
+          <!-- reportsDirectory>target/surefire-reports-${surefire.forkNumber}</reportsDirectory -->
         </configuration>
       </plugin>
     </plugins>
