@@ -270,7 +270,7 @@
         <version>3.2.2</version>
         <configuration>
           <forkCount>3</forkCount>
-          <reuseForks>false</reuseForks>
+          <reuseForks>true</reuseForks>
           <reportsDirectory>target/surefire-reports-${surefire.forkNumber}</reportsDirectory>
           <systemPropertyVariables>
             <databaseSchema>MY_TEST_SCHEMA_${surefire.forkNumber}</databaseSchema>
