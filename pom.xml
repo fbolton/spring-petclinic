@@ -269,7 +269,6 @@
         <artifactId>maven-surefire-plugin</artifactId>
         <version>3.2.2</version>
         <configuration>
-          <fork>true</fork>
           <forkCount>3</forkCount>
           <reuseForks>false</reuseForks>
           <reportsDirectory>target/surefire-reports-${surefire.forkNumber}</reportsDirectory>
