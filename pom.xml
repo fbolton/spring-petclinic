@@ -271,12 +271,7 @@
         <configuration>
           <forkCount>3</forkCount>
           <reuseForks>true</reuseForks>
-          <argLine>-Xmx1024m -XX:MaxPermSize=256m</argLine>
           <reportsDirectory>target/surefire-reports-${surefire.forkNumber}</reportsDirectory>
-          <systemPropertyVariables>
-            <databaseSchema>MY_TEST_SCHEMA_${surefire.forkNumber}</databaseSchema>
-          </systemPropertyVariables>
-          <workingDirectory>FORK_DIRECTORY_${surefire.forkNumber}</workingDirectory>
         </configuration>
       </plugin>
     </plugins>
