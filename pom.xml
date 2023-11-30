@@ -269,9 +269,10 @@
         <artifactId>maven-surefire-plugin</artifactId>
         <version>3.2.2</version>
         <configuration>
+          <fork>true</fork>
           <forkCount>3</forkCount>
-          <reuseForks>true</reuseForks>
-          <argLine>-Xmx1024m -XX:MaxPermSize=256m</argLine>
+          <reuseForks>false</reuseForks>
+          <reportsDirectory>target/surefire-reports-${surefire.forkNumber}</reportsDirectory>
           <systemPropertyVariables>
             <databaseSchema>MY_TEST_SCHEMA_${surefire.forkNumber}</databaseSchema>
           </systemPropertyVariables>
